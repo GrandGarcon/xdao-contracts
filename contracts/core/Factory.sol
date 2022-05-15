@@ -67,7 +67,9 @@ contract Factory is Ownable {
     }
 
     EnumerableSet.AddressSet private daos;
-
+    /**
+   TODO:  integrate the checking function from the world coin ID semaphore contract
+     */
     function create(
         string memory _daoName,
         string memory _daoSymbol,

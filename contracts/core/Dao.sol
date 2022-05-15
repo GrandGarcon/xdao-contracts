@@ -449,6 +449,9 @@ contract Dao is ReentrancyGuard, ERC20 {
 
         return true;
     }
+    /**
+    TODO: adding the semaphore condition for validating the proof for including only the addresses which are approved (ie generates the merkleRoot).
+     */
 
     function addPermitted(address p) external onlyDao returns (bool) {
         require(permitted.add(p), "DAO: already permitted");
